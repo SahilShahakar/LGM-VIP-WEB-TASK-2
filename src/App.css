@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:wght@300&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  height: 150px;
+  width: 100%;
+  background-image: linear-gradient(to right, #000000, #181818);
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 20px; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navitems {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: Caveat Brush;
+  justify-content: space-between;
+}
+
+.navitems h2 {
+  font-size: 30px;
+  margin-left: 100px;
+  font-weight: lighter;
+  font-size: 44px;
+}
+
+.navitems button {
+  width: 23%;
+  height: 9vh;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background-color: #d8804c;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin: auto 0px;
+}
+
+.fetchbtn:hover {
+  background-color: #df5b0f;
+}
+.userdatacontainer {
+  width: 100%;
+  height: fit-content;
+  background-image: linear-gradient(to bottom right, #424242, #a3dd74);
+}
+#main {
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+  /* padding-top: 10vh; */
+}
+.name:hover {
+  color: crimson;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 3px #df5b0f solid;
+}
+
+.profile_cont {
+  border-radius: 2%;
+  background: black;
+  border: 2px #df5b0f solid;
   color: white;
+  margin: 5px;
+  padding: 10px;
+  width: 24%;
+  text-align: center;
+  transition: transform ease 0.25s;
+  margin-top: 8vh;
 }
 
-.App-link {
-  color: #61dafb;
+.profile_cont:hover {
+  transform: scale(1.2);
+  background: rgb(14, 14, 14);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
